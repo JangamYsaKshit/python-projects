@@ -1,4 +1,4 @@
-# Python Projects
+# Python Project
 
 A collection of Python projects focused on building practical applications and developing strong programming skills.
 
