@@ -16,7 +16,7 @@ Instead of using a pre-built financial application, this project focuses on buil
 
 The application helps users:
 
-* Record and view income and expenses
+* Record and view income and expenses.
 * Search for transactions
 * Calculate total income, expenses, and balance
 * Find average, highest, and lowest expenses
