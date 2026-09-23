@@ -3,7 +3,7 @@
 
 
 # DATA
-Transaction_Data = [
+Transaction_Data = []
 
 
 # 1. Add Transaction 
