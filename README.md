@@ -15,7 +15,7 @@ This repository contains projects built with Python, ranging from fundamental ap
 
 ## Goal
 
-To build practical Python projects and develop a strong foundation for **Data Science and Machine Learning**
+To build practical Python projects and develop a strong foundation for **Data Science and Machine Learning**.
 
 ## Author
 
