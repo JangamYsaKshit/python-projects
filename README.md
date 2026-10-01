@@ -1,5 +1,5 @@
 # Python Project
-.
+
 A collection of Python projects focused on building practical applications and developing strong programming skills.
 
 This repository contains projects built with Python, ranging from fundamental applications to more advanced projects as I continue developing my skills.
