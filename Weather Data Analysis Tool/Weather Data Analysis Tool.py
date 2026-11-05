@@ -4,7 +4,7 @@
 # ==========================================
 
 # Database
-Weather_Data = 
+Weather_Data = []
 
 # Unique ID
 unique_id = 0
