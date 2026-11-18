@@ -265,4 +265,21 @@ while True:
                             else:
                                 print("Invalid Delete Option Choice,")
 
-    # 
+                else:
+                    print("Account Nor Found.")
+
+    # 6.  Deposit Money
+    elif user_menu_choice == 6:
+
+        # check if the list is empty.
+        if len(Accounts) == 0:
+            print("No Bank Accouts found.")
+
+        else:
+            # Ask for the Account Name.
+            deposit_account_name = str(input("Enter Account Holder Name: ")).title()
+
+            # Search for the account
+            for search_account in Accounts:
+                if search_account[1] == delete_account_name:
+                    print("Account Found")
