@@ -206,8 +206,63 @@ while True:
 
     # 5 Exit
     elif user_menu_choice == 5:
-        print("Exit")
-        break
 
-    else:
-        print("Invalid Menu Choice.")
+        # # check if the list is empty.
+        if len(Accounts) == 0:
+            print("No bank accounts found")
+
+        else:
+            print("========== DELETE BANK ACCOUNT ==========", "\n")
+            # Ask fir the Account Name
+            delete_account_name = str(input("Enter Account Holder Name: ")).title()
+
+            # Search for the account
+            for search_account in Accounts:
+                if search_account[1] == delete_account_name:
+                    print("Account Found!")
+
+                    print(
+                        " Account ID:", search_account[0],"\n",
+                        "Account Name:", search_account[1],"\n",
+                        "Account Type:", search_account[2],"\n",
+                        "Balance: $", search_account[3], "\n",
+                        "Account Status: Active", "\n"
+                    )
+
+                    # check the account balance.
+                    if search_account[3] <= 0:
+                        print("Account cannot be deleted because it has a remaining balance.")
+
+                    else:
+                        print(
+                            " Account ID:", search_account[0],"\n",
+                            "Account Name:", search_account[1],"\n",
+                            "Account Type:", search_account[2],"\n",
+                            "Balance: $", search_account[3], "\n",
+                            "Account Status: Active", "\n"
+                        )
+
+                        while True:
+                            print("Are you sure you want to delete this account?", "\n")
+                            print("1. Yes, Delete Account")
+                            print("2. No, Cancel")
+                            print("3. Exit")
+
+                            # User's choice
+                            users_delete_confirmaitons = int(input("Enter You'r Choice: "))
+
+                            if users_delete_confirmaitons == 1:
+                                Accounts.pop(search_account[0:])
+                                print("Account Deleted Successfully.")
+
+                            elif users_delete_confirmaitons == 2:
+                                print("Account deletion cancelled.")
+
+                            elif users_delete_confirmaitons == 3:
+                                print("Return to the main menu.")
+                                break
+                            
+                            else:
+                                print("Invalid Delete Option Choice,")
+
+    # 
